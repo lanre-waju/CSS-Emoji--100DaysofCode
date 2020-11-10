@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #333;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.head {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background: #Fad900 ;
+  border-radius: 50%;
+  margin: 15% auto;
+}
+
+.eye {
+  position: absolute;
+  background: #333;
+  height: 80px;
+  width: 80px;
+  top: 50px;
+  clip-path: ellipse(25% 40% at 50% 50%);
+}
+
+.eye.left {
+  left: 30px;
+}
+
+.eye.right {
+  right: 30px;
+}
+
+.mouth {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #333;
+  width: 70px;
+  height: 70px;
+  clip-path: circle(50% at 50% 0);
+}
